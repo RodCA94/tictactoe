@@ -199,13 +199,14 @@ class TicTacToe{
     // If there is a winner the argument is used to print out the correct winner
     public void printStatus(char player)
     {
-        if (gameStatus() == Status.DRAW)
-            {
-            System.out.printf("Draw%n");
-            }
-        else if (gameStatus() == Status.WIN)
+      
+        if (gameStatus() == Status.WIN)
             {
             System.out.printf("Player %c Wins%n", player);
+            }
+         else if (gameStatus() == Status.DRAW)
+            {
+            System.out.printf("Draw%n");
             }
 
     }
